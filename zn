@@ -1,0 +1,25 @@
+#!/bin/bash
+
+note_destination=${1:-"$HOME/Inbox/"}
+
+note_id="$(date +'%Y%m%d%H%M%S')"
+note_ui_name="$note_id.md"
+
+tmpdirectory=$(mktemp -d "${TMPDIR:-/tmp/}$(basename $0).XXXXXXXXXXXX")
+fleeting_dst="$tmpdirectory/$note_ui_name"
+
+fleetinbox="$note_destination/$note_ui_name"
+
+file_header=$(cat << EOF
+---
+title:
+id: $note_id
+type:
+keywords: []
+---
+EOF
+)
+
+echo "$file_header" > "$fleeting_dst"
+
+nvim "$fleetinbox" -c "silent 0read $fleeting_dst" + 2>/dev/null
