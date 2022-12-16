@@ -33,4 +33,5 @@ You can:
     - `ctrl-b`: search for backlinks to the currently selected note
     - `ctrl-e`: send the note be edited remotely (using nvim session)
     - `ctrl-y`: copy the id of selected note(s)
+    - `?`: to preview the note selected (`?` is the default command of `fzf`)
 * Or create anything you want
