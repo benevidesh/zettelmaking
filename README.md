@@ -28,9 +28,9 @@ The list is showed using `fzf`.
 Once `fzf` is in the scene, sky is the limit.
 You can:
 * type a term to filter the list and see only files matching your search (reloads automatically)
-* Or:
-    - enter: simply edit selected note(s)
-    - ctrl-b: search for backlinks to the currently selected note
-    - ctrl-e: send the note be edited remotely (using nvim session)
-    - ctrl-y: copy the id of selected note(s)
-    - create anything you want
+* Or hit:
+    - `enter`: simply edit selected note(s)
+    - `ctrl-b`: search for backlinks to the currently selected note
+    - `ctrl-e`: send the note be edited remotely (using nvim session)
+    - `ctrl-y`: copy the id of selected note(s)
+* Or create anything you want
