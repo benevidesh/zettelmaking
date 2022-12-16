@@ -36,3 +36,7 @@ You can:
     - `ctrl-y`: copy the id of selected note(s)
     - `?`: to preview the note selected (`?` is the default command of `fzf`)
 * Or create anything you want
+
+## See
+
+[![Youtube](https://img.youtube.com/vi/Pghm8TXBhDk/0.jpg)](https://www.youtube.com/watch?v=Pghm8TXBhDk)
