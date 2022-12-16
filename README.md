@@ -37,6 +37,6 @@ You can:
     - `?`: to preview the note selected (`?` is the default command of `fzf`)
 * Or create anything you want
 
-## See
+## (awful) Demo
 
 [![Youtube](https://img.youtube.com/vi/Pghm8TXBhDk/0.jpg)](https://www.youtube.com/watch?v=Pghm8TXBhDk)
