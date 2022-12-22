@@ -10,7 +10,7 @@ A set of scripts to assist you in creating ["a partner in communication"](http:/
 
 ### What counts as a note?
 
-Any markdown file (`.md`) with a yaml heading.
+Any markdown file (`.md`) named _without_ spaces containing a yaml heading.
 
 ```md
 ---
