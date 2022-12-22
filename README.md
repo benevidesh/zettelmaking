@@ -2,6 +2,10 @@
 
 A set of scripts to assist you in creating ["a partner in communication"](http://luhmann.surge.sh/communicating-with-slip-boxes)
 
+### Dependencies
+
+- [fzf](https://github.com/junegunn/fzf) for the `zex` script
+
 ## What counts as a note?
 
 Any markdown file (`.md`) with a yaml heading.
