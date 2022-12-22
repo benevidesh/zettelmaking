@@ -4,7 +4,7 @@ A set of scripts to assist you in creating ["a partner in communication"](http:/
 
 ## Requirements
 
-- [fzf](https://github.com/junegunn/fzf) is required for the `zex` script
+- [fzf](https://github.com/junegunn/fzf) is required for the `zx` script
 
 ## Assumptions
 
@@ -30,9 +30,9 @@ Take a look at the Examples folder included in this repo.
 
 ### How these scripts might help you?
 
-The "meat" is the script named `zex` (a short for: Zettelkasten Explorer).
+The "meat" is the script named `zx` (a short for: Zettelkasten Explorer).
 
-Calling `zex` lists all the notes in a given folder.
+Calling `zx` lists all the notes in a given folder.
 The list is showed using `fzf`.
 
 Once `fzf` is in the scene, sky is the limit.
