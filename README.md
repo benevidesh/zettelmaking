@@ -40,7 +40,7 @@ You can:
 * type a term to filter the list and see only files matching your search (reloads automatically)
 * Or hit:
     - `enter`: simply edit selected note(s)
-        - once you do that your `n(vim)` quickfix list is populated with the title of the selected notes.
+        - once you do that your `n(vim)` quickfix list is populated with the title of the selected notes (`:h quickfix`, `:h quickfix-window`).
     - `ctrl-b`: search for backlinks to the currently selected note
     - `ctrl-e`: send the note be edited remotely (using nvim session)
     - `ctrl-y`: copy the id of selected note(s)
