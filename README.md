@@ -4,7 +4,9 @@ A set of scripts to assist you in creating ["a partner in communication"](http:/
 
 ## Requirements
 
-- [fzf](https://github.com/junegunn/fzf) is required for the `zx` script
+The `zx` script requires:
+- [fzf](https://github.com/junegunn/fzf)
+- xclip 
 
 ## Assumptions
 
