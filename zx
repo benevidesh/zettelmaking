@@ -24,7 +24,7 @@ GRP_PREFIX="grep -H -m 1 -in $INITIAL_QUERY *.md | cut -d: -f1,4 | sed 's/$FILE_
 # Code...
     #fzf --bind "change:reload:sleep 0.1;($GRP_PREFIX {q} | cut -d: -f1,2,4) || true" \
 FZF_DEFAULT_COMMAND="$GRP_PREFIX  "\
-        fzf --bind "change:reload:(grep -m 1 -ni {q} *.md |  cut -d: -f1 | xargs grep -H ^title: | sed 's/:title:/ - /g;s/.md//g') || true" \
+        fzf --bind "change:reload:(grep -m 1 -ni {q} *.md |  cut -d: -f1 | xargs grep -m 1 -H ^title: | sed 's/:title:/ - /g;s/.md//g') || true" \
                   --bind "ctrl-b:reload:(printf "%s\n" {} | cut -d' ' -f1 | xargs -I{} grep {} *.md | cut -d: -f1 | xargs grep -H ^title: | sed 's/:title:/ - /g;s/.md//g') || true" \
                   --disabled \
                   --ansi \
