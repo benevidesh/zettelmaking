@@ -32,4 +32,4 @@ FZF_DEFAULT_COMMAND="$GRP_PREFIX  "\
                   --preview "cat {1}$FILE_EXTENSION" \
                   --bind 'ctrl-e:execute(printf "%s\n" {+} | cut -d" " -f1 | sed 's/$/.md/g' | xargs -I{} -o nvim --server "$NVIM_LISTEN_ADDRESS"  --remote $PWD/{})' \
                   --bind 'enter:execute(printf "%s\n" {+} | cut -d" " -f1 | sed 's/$/.md/g' | xargs -o nvim  -c "silent bufdo grepadd ^'title'  %" )' \
-                  --bind "ctrl-y:execute(printf '%s\n' {+} | sed 's/\([0-9]\+\):[0-9]\+:\(.*\)/\2 [[\1]]/' | xclip -selection clipboard)" \
+                  --bind "ctrl-y:execute(printf '%s\n' {+} | sed 's/\([0-9]\+\) - \(.*\)/\2 [[\1]]/' | xclip -selection clipboard)" \
