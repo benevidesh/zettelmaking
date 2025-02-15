@@ -1,6 +1,14 @@
 #!/bin/bash
+# TODO: criar yml header para template para:
+# - article
+# - bibliography
+# - other fichas
+# connection: index cards that link ideas and sections of the work plan; 
+# question: index cards dealing with how to confront a particular problem;
+# recommendation: index cards that note ideas provided by others
+# suggestions: for further developments
 
-note_destination=${1:-"$HOME/Inbox/"}
+note_destination=${1:-"$NOTESIN"}
 
 note_id="$(date +'%Y%m%d%H%M%S')"
 note_ui_name="$note_id.md"
@@ -15,7 +23,8 @@ file_header=$(cat << EOF
 title:
 id: $note_id
 type:
-keywords: []
+tags:
+ -
 ---
 EOF
 )
