@@ -24,7 +24,7 @@ GRP_PREFIX="grep -H -m 1 -in $INITIAL_QUERY *.md | cut -d: -f1,4 | sed 's/$FILE_
 # Code...
     #fzf --bind "change:reload:sleep 0.1;($GRP_PREFIX {q} | cut -d: -f1,2,4) || true"
 function matching_notes () {
-    notes=$(grep -m 1 -ni ${1} *.md |  cut -d: -f1 | xargs grep -m 1 -H ^title: | sed 's/:title:/ - /g;s/.md//g;s/  \+/ /g')
+    notes=$(grep -m 1 -ni "${1}" *.md |  cut -d: -f1 | xargs grep -m 1 -H ^title: | sed 's/:title:/ - /g;s/.md//g;s/  \+/ /g')
     printf "%s\n" "${notes}"
 }
 export -f matching_notes
@@ -37,6 +37,7 @@ FZF_DEFAULT_COMMAND="$GRP_PREFIX  "\
                   --bind "ctrl-b:reload:(printf "%s\n" {} | cut -d' ' -f1 | xargs -I{} grep {} *.md | cut -d: -f1 | xargs grep -H ^title: | sed 's/:title:/ - /g;s/.md//g') || true" \
                   --disabled \
                   --style full \
+                  --multi \
                   --delimiter - \
                   --preview "[[ ! -z {} ]] && cat {1}$FILE_EXTENSION" \
                   --preview-window "~3" \
